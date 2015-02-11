@@ -14,8 +14,8 @@ To install the backend:
 -----------------------
 ###Important notes on vagrant usage:
 	
-######a) never run vagrant commands from your home machine as root. 
-  ie, if you mistakenly run anything with the pattern 
+######a) Never run vagrant commands from your home machine as root :)
+ie, if you mistakenly run anything with the pattern 
 	
 		host machine prompt> sudo vagrant xxx
 		
@@ -23,28 +23,28 @@ To install the backend:
 	
   Running code as root from inside of the vagrant machine, ( ex: after >vagrant ssh and before ctrl-d ), is fine. 
 	
-######b) To restart vagrant a vagrant box, you must first go to the directory where you first initilized and installed the vagrant box. If you type this command:
+######b) Starting the vagrant virtual machine. 
+To restart vagrant a vagrant box, you must first go to the directory where you first initilized and installed the vagrant box, then use the 'vagrant up' command. If you type this command:
 		
 		host machine prompt> vagrant up
 		
   in the wrong directory it will cause much confusion and problems. 
 	
-######c) If you are re-installing the back end and wish to re-install the vagrant instance 
-  (the first two commands in step 3), you need to first destroy the previously installed vagrant box
+######c) Re-installing the virtual box
+If you are re-installing the back end and wish to re-install the vagrant instance, you need to first destroy the previously installed vagrant box using these commands, run from the directory where the original vagrant box was installed
 		> vagrant destroy
   Then remove the vagrant config file found in the installation directory. 
 		> rm Vagrantfile
 
 -----------------------
-####2) Copy this git repository to a folder on your computer and make that folder your working directory.
+####2) Setup the vagrant folder
+
+	#####a) Copy this git repository to a folder on your computer and make that folder your working directory.
 	
-####3) Create a folder in which to install the Vagrant box with the backend
+	#####b) Navigate to the git repository's folder; this will be used as the Vagrant install folder.
   
-####4) Copy the file installBackEnd.sh from this git repository into the vagrant install folder just created
-  
-####5) Navigate to the Vagrant install folder
-  
-####6) At a command prompt run these commands to establish the Virtual box and install the server :
+####3) Establish the Virtual box and install the server
+At a terminal command prompt run these commands:
   
 	host machine prompt> vagrant box add ubuntu14 https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-i386-vagrant-disk1.box
 	host machine prompt> vagrant init ubuntu14
