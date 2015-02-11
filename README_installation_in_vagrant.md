@@ -39,9 +39,9 @@ To install the backend:
 -----------------------
 ####2) Setup the vagrant folder
 
-  #####a) Copy this git repository to a folder on your computer and make that folder your working directory.
+#####a) Copy this git repository to a folder on your computer.
 	
-  #####b) Navigate to the git repository's folder; this will be used as the Vagrant install folder.
+#####b) Navigate to the git repository's folder; this will be used as the Vagrant install folder.
   
 ####3) Establish the Virtual box and install the server
 At a terminal command prompt run these commands:
@@ -59,7 +59,7 @@ At a terminal command prompt run these commands:
  	
  The server should now be installed and the data loaded. All that is left is to make it so the host machine can see the server in the guest machine (by forwarding port 5000), then to start the server.
 	
-####7) Forward port 5000 from the guest machine to the host machine and start the server
+####4) Forward port 5000 from the guest machine to the host machine and start the server
 This allows you to see the webpage the back end serves out.
 
 To do this, enter these commands:
@@ -70,14 +70,14 @@ To do this, enter these commands:
 	guest machine prompt> foreman start
 	
 	
-####9) Check the installation
+####5) Check the installation
 The server should now be running. To check that everything was successfull open an internet browser window and enter this in the address bar:
   	
   	127.0.0.1:5000
 	
 The OpenDisclosure site should come up, and should look pretty much just like the current running [OpenDisclosure website](http://www.opendisclosure.io/). 
 
-####10) Shutting everything down. 
+####6) Shutting everything down. 
 It is advised that you do not leave vagrant running when it is not needed as this can occasionally cause conflicts if other vagrant machines are initilized which are located in associated directories or use the same ports. 
 
    To stop the server, at the command prompt where the command
