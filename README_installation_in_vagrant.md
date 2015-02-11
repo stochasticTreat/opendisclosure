@@ -1,4 +1,4 @@
-OpenDisclosure backend installation in Vagrant
+OpenDisclosure backend installation in Vagrant: 6 step procedure! You too can do it at home!
 =================
 
 Scripts to build Hack Oregon's back end in a vagrant virtual machine.
@@ -13,7 +13,7 @@ See [https://www.virtualbox.org/](https://www.virtualbox.org/) for virtual box.
 See [http://www.vagrantup.com/](http://www.vagrantup.com/) for vagrant.
 		
 -----------------------
-###Important notes on vagrant usage:
+###Three important notes on vagrant usage:
 	
 ######a) Never run vagrant commands from your home machine as root :)
   ie, if you mistakenly run anything with the pattern 
@@ -33,9 +33,12 @@ See [http://www.vagrantup.com/](http://www.vagrantup.com/) for vagrant.
 	
 ######c) Re-installing the virtual box
   If you are re-installing the back end and wish to re-install the vagrant instance, you need to first destroy the previously installed vagrant box using these commands, run from the directory where the original vagrant box was installed. 
-		> vagrant destroy
-  Then remove the vagrant config file found in the installation directory. 
-		> rm Vagrantfile
+  
+	> vagrant destroy
+	
+  Then remove the vagrant config file found in the installation directory.
+  
+	> rm Vagrantfile
 
 -----------------------
 ####2) Setup the vagrant folder
