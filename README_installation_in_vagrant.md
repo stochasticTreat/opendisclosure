@@ -2,14 +2,15 @@ OpenDisclosure backend installation in Vagrant
 =================
 
 Scripts to build Hack Oregon's back end in a vagrant virtual machine.
+This has been tested on a Mac running Yosemite. From what I understand, Virtual box and Vagrant work in Windows as well, and most of the commands are the same, though, I have not tested it in Windows.
 
 To install the backend:
 
 ####1) Install Virtual box and Vagrant.
 
-		See [https://www.virtualbox.org/](https://www.virtualbox.org/) for virtual box.
+See [https://www.virtualbox.org/](https://www.virtualbox.org/) for virtual box.
 	
-		See [http://www.vagrantup.com/](http://www.vagrantup.com/) for vagrant.
+See [http://www.vagrantup.com/](http://www.vagrantup.com/) for vagrant.
 		
 -----------------------
 ###Important notes on vagrant usage:
