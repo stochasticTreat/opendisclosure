@@ -8,6 +8,8 @@ The goal of the project is to produce useful visualizations and statistics for O
 
 Meeting notes can be found in [this Google Doc](https://docs.google.com/document/d/11xji54-RiszyFBQnSBOI5Ylmzn2vC9glwAoU6A8CM_0/edit?pli=1#).
 
+## To install the backend in a Vagrant Virtual box or on an instance of Ubuntu 14 follow the instructions here:
+[Instructions for running backend in vagrant]()
 ## Running Locally
 
 To start, you'll need ruby installed.
