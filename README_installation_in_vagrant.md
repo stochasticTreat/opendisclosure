@@ -24,7 +24,7 @@ See [http://www.vagrantup.com/](http://www.vagrantup.com/) for vagrant.
 	
   Running code as root from inside of the vagrant machine, ( ex: after >vagrant ssh and before ctrl-d ), is fine. 
 	
-######b) Starting the vagrant virtual machine. 
+######b) Starting the vagrant virtual machine after it is shut down 
   To restart vagrant a vagrant box, you must first go to the directory where you first initilized and installed the   vagrant box, then use the 'vagrant up' command. If you type this command:
 		
 		host machine prompt> vagrant up
