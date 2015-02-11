@@ -54,12 +54,15 @@ To install the backend:
 	guest machine prompt> cp /vagrant/installBackEnd.sh ~
 	guest machine prompt> sudo chmod 755 ~/installBackEnd.sh
 	guest machine prompt> ./installBackEnd.sh
- 
+	
+ 	Press 'control + D' to log out of the Vagrant virtual machine; this will give you back the host machine prompt.
+ 	
  The server should now be installed and the data loaded. All that is left is to make it so the host machine can see the server in the guest machine (by forwarding port 5000), then to start the server.
 	
-####7) Press 'control + D' to log out of the Vagrant virtual machine; this will give you back the host machine prompt.
- 
-####8) Enter:
+####7) Forward port 5000 from the guest machine to the host machine and start the server
+This allows you to see the webpage the back end serves out.
+
+To do this, enter these commands:
  
  	host machine prompt> vagrant reload
 	host machine prompt> vagrant ssh
@@ -67,13 +70,15 @@ To install the backend:
 	guest machine prompt> foreman start
 	
 	
-####9) The server should now be running. To check that everything was successfull open an internet browser window and enter this in the address bar:
+####9) Check the installation
+The server should now be running. To check that everything was successfull open an internet browser window and enter this in the address bar:
   	
   	127.0.0.1:5000
 	
 The OpenDisclosure site should come up, and should look pretty much just like the current running [OpenDisclosure website](http://www.opendisclosure.io/). 
 
-####10) Shutting everything down. It is advised that you do not leave vagrant running when it is not needed as this can occasionally cause conflicts if other vagrant machines are initilized which are located in associated directories or use the same ports. 
+####10) Shutting everything down. 
+It is advised that you do not leave vagrant running when it is not needed as this can occasionally cause conflicts if other vagrant machines are initilized which are located in associated directories or use the same ports. 
 
    To stop the server, at the command prompt where the command
    
