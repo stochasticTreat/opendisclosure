@@ -5,11 +5,11 @@ Scripts to build Hack Oregon's back end in a vagrant virtual machine.
 
 To install the backend:
 
-####1) Virtual box and vagrant must be installed.
+####1) Install Virtual box and Vagrant.
 
-		See https://www.virtualbox.org/ for virtual box.
+		See [https://www.virtualbox.org/](https://www.virtualbox.org/) for virtual box.
 	
-		See http://www.vagrantup.com/ for vagrant.
+		See [http://www.vagrantup.com/](http://www.vagrantup.com/) for vagrant.
 		
 -----------------------
 ###Important notes on vagrant usage:
