@@ -15,23 +15,23 @@ To install the backend:
 ###Important notes on vagrant usage:
 	
 ######a) Never run vagrant commands from your home machine as root :)
-ie, if you mistakenly run anything with the pattern 
+  ie, if you mistakenly run anything with the pattern 
 	
 		host machine prompt> sudo vagrant xxx
 		
-  you will probably need to read [this](http://stackoverflow.com/questions/25652769/should-vagrant-require-sudo-for-each-command) to make everything work right again.
+  you will probably need to read [this](http://stackoverflow.com/questions/25652769/should-vagrant-require-sudo-for-each-command) to make everything   work right again.
 	
   Running code as root from inside of the vagrant machine, ( ex: after >vagrant ssh and before ctrl-d ), is fine. 
 	
 ######b) Starting the vagrant virtual machine. 
-To restart vagrant a vagrant box, you must first go to the directory where you first initilized and installed the vagrant box, then use the 'vagrant up' command. If you type this command:
+  To restart vagrant a vagrant box, you must first go to the directory where you first initilized and installed the   vagrant box, then use the 'vagrant up' command. If you type this command:
 		
 		host machine prompt> vagrant up
 		
   in the wrong directory it will cause much confusion and problems. 
 	
 ######c) Re-installing the virtual box
-If you are re-installing the back end and wish to re-install the vagrant instance, you need to first destroy the previously installed vagrant box using these commands, run from the directory where the original vagrant box was installed
+  If you are re-installing the back end and wish to re-install the vagrant instance, you need to first destroy the previously installed vagrant box using these commands, run from the directory where the original vagrant box was installed. 
 		> vagrant destroy
   Then remove the vagrant config file found in the installation directory. 
 		> rm Vagrantfile
@@ -39,9 +39,9 @@ If you are re-installing the back end and wish to re-install the vagrant instanc
 -----------------------
 ####2) Setup the vagrant folder
 
-	#####a) Copy this git repository to a folder on your computer and make that folder your working directory.
+  #####a) Copy this git repository to a folder on your computer and make that folder your working directory.
 	
-	#####b) Navigate to the git repository's folder; this will be used as the Vagrant install folder.
+  #####b) Navigate to the git repository's folder; this will be used as the Vagrant install folder.
   
 ####3) Establish the Virtual box and install the server
 At a terminal command prompt run these commands:
