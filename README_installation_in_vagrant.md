@@ -11,31 +11,31 @@ To install the backend:
 	
 		See http://www.vagrantup.com/ for vagrant.
 		
-	-----------------------
-	Important notes on vagrant usage:
+-----------------------
+Important notes on vagrant usage:
 	
-	a) never run vagrant commands from your home machine as root. 
-	  ie, if you mistakenly run anything with the pattern 
+  a) never run vagrant commands from your home machine as root. 
+  ie, if you mistakenly run anything with the pattern 
 	
 		host machine prompt> sudo vagrant xxx
 		
-	  you will probably need to read [this](http://stackoverflow.com/questions/25652769/should-vagrant-require-sudo-for-each-command) to make everything work right again.
+  you will probably need to read [this](http://stackoverflow.com/questions/25652769/should-vagrant-require-sudo-for-each-command) to make everything work right again.
 	
-	Running code as root from inside of the vagrant machine, ( ex: after >vagrant ssh and before ctrl-d ), is fine. 
+  Running code as root from inside of the vagrant machine, ( ex: after >vagrant ssh and before ctrl-d ), is fine. 
 	
-	b) To restart vagrant a vagrant box, you must first go to the directory where you first initilized and installed the vagrant box. If you type this command:
+  b) To restart vagrant a vagrant box, you must first go to the directory where you first initilized and installed the vagrant box. If you type this command:
 		
 		host machine prompt> vagrant up
 		
-	  in the wrong directory it will cause much confusion and problems. 
+  in the wrong directory it will cause much confusion and problems. 
 	
-	c) If you are re-installing the back end and wish to re-install the vagrant instance 
-	  (the first two commands in step 3), you need to first destroy the previously installed vagrant box
+  c) If you are re-installing the back end and wish to re-install the vagrant instance 
+  (the first two commands in step 3), you need to first destroy the previously installed vagrant box
 		> vagrant destroy
-	Then remove the vagrant config file found in the installation directory. 
+  Then remove the vagrant config file found in the installation directory. 
 		> rm Vagrantfile
 
-	-----------------------
+-----------------------
   2) Copy this git repository to a folder on your computer and make that folder your working directory.
 	
   3) Create a folder in which to install the Vagrant box with the backend
